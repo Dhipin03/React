@@ -1,0 +1,80 @@
+/* MovingText.css */
+.moving-text-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  color: #d8d4d5; 
+  
+}
+
+.moving-text {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+}
+
+/* Define a class to trigger the animation */
+.move-rotate-animation {
+  animation: moveAndRotate 5s ease forwards; /* Move and rotate the text */
+  transform-origin: left center; /* Adjust the rotation point */
+}
+
+@keyframes moveAndRotate {
+  0% {
+    left: 0;
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    left: calc(100% - 100px); /* Adjust this value to control the distance it moves to the right */
+    transform: translateX(100%) rotate(3600deg); /* Move and rotate the text */
+  }
+}
+
+
+
+/* MovingText.css */
+/* ... (previous CSS code) ... */
+
+/* Define a class to trigger the reverse animation */
+.reverse-animation {
+  animation: reverseMoveAndRotate 5s ease forwards; /* Reverse the movement and rotation */
+  transform-origin: left center; /* Adjust the rotation point */
+}
+
+@keyframes reverseMoveAndRotate {
+  0% {
+    left: calc(100% - 100px); /* Adjust this value to control the distance it moves to the right */
+    transform: translateX(100%) rotate(3600deg); /* Initial rotated position */
+  }
+  100% {
+    left: 0;
+    transform: translateX(0) rotate(0deg); /* Move and rotate the text back */
+  }
+}
+
+
+/* MovingText.css */
+/* ... (previous CSS code) ... */
+
+/* Add margin to create a gap between buttons */
+.button-gap {
+  margin-right: 50px; /* Adjust the margin size as needed */
+}
+
+
+/* Your CSS file (e.g., MovingText.css) */
+/* Your CSS file (e.g., MovingText.css) */
+/* styles.css */
+body {
+  background-image: url('https://avatars.githubusercontent.com/u/86366969?v=4');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+  background-position: center center; /* Optional: Centers the background image */
+  margin: 0; /* Optional: Remove default body margin */
+  padding: 0; /* Optional: Remove default body padding */
+}
+
+
+
